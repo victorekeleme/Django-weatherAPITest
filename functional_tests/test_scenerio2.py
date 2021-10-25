@@ -22,7 +22,7 @@ class TestScenerio2(StaticLiveServerTestCase):
 
     #excel write to file set up
     file = os.path.abspath('functional_tests/result/Results.xlsx')
-    sheetNo = 'Sheet3'
+    sheetNo = 'Sheet2'
     time = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
 
