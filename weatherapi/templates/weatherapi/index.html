@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Api Test</title>
+</head>
+<body>
+<!--    form for different city-->
+    <form method="post", action="{% url 'weather_list' %}">
+        {% csrf_token %}
+        <input type="submit" value="London" name="btn">
+        <input type="Submit" value="Paris" name="btn">
+        <input type="submit" value="New York" name="btn">
+        <input type="submit" value="Delhi" name="btn">
+        <input type="submit" value="Tokyo" name="btn">
+
+    </form>
+
+<!-- Temperature details   -->
+    {% if temp and humidity and description  %}
+    <div>
+    <h1 class="city_name">City Name: {{ city_name|title  }} </h1>
+    <p class="temp">Temperature:  {{ temp }} </p>
+    <p class="humidity">Humidity: {{ humidity }} </p>
+    <p class="description">Description: {{ description }} </p>
+    <p class="temp_min">Temp min:  {{ temp_min }} </p>
+    <p class="temp_max">Temp max:  {{ temp_max }} </p>
+    </div>
+
+    {% endif %}
+
+
+</body>
+</html>
