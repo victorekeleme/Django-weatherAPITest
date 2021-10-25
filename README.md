@@ -18,7 +18,8 @@ Once pip has finished downloading the dependencies:
 
 ### python manage.py runserver
 
-### And navigate to http://127.0.0.1:8000
+### And navigate to http://127.0.0.1:8000 to see the web page
+
 
 
 ## Tests
@@ -27,7 +28,7 @@ The manual test cases are located at the base folder of the project
 
 To run the automated scripts cd into the directory where manage.py is:
 
-### python manage.py test functional_tests
+### And run python manage.py test functional_tests
 
 This command runs all test scenerios from 1 to 5
 when its done locate the results in the folder: weatherapitest/functional_tests/result/results.xlsx
