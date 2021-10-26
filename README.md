@@ -31,7 +31,7 @@ To run the automated scripts cd into the directory where manage.py is:
 ### And run python manage.py test functional_tests
 
 This command runs all test scenerios from 1 to 5
-when its done locate the results in the folder: weatherapitest/functional_tests/result/results.xlsx
+when its done locate the results in the folder: "weatherapitest/functional_tests/result/results.xlsx"
 
 ### Note: You can only run the automation test cases when the server is not on.
 
