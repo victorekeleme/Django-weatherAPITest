@@ -1,5 +1,8 @@
 # Django-weatherAPITest
 
+
+![weatherapi test](https://user-images.githubusercontent.com/74677661/138802840-3e0f9ef0-5515-436f-a48a-1f053c76c6f2.PNG)
+
 ## Setup
 The first thing to do is to clone the repository
 
