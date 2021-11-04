@@ -6,8 +6,10 @@ import json
 
 def api_display_test_data(city):
 
+    #api key
     APIkey = '9d50450a48809637b4862bdcb125927d'
 
+# if statement to get corresponding city_id and language
     city_name = city.lower()
     if city_name == 'london':
         city_id = 2643743
@@ -27,10 +29,13 @@ def api_display_test_data(city):
     else:
         city_id = None
 
+    #api request source
     source = urllib.request.urlopen(f'http://api.openweathermap.org/data/2.5/weather?id={city_id}&units=metric&lang={lang}&appid={APIkey}').read()
 
+    # Json data for the requested city
     list_of_data = json.loads(source)
 
+    # selected city data to be consumed
     data = {
         "city_name": str(city),
         "temp": str(list_of_data['main']['temp']) + '°C',
@@ -41,4 +46,4 @@ def api_display_test_data(city):
 
     }
 
-    return data
+    return data # returns the city data
